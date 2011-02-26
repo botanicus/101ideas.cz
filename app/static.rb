@@ -10,6 +10,8 @@ class Static < Ace::Item
 
   # HACK: @output_path is "" for some reason, why? -> FIX IT
   def output_path
-    "output/about.html"
+    _, basename = File.split(@original_path)
+    slug = basename.split(".").first
+    "output/#{slug}.html"
   end
 end
