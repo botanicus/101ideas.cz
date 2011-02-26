@@ -6,6 +6,7 @@
     %meta{"http-equiv" => "content-language", content: "en"}
     %meta{name: "description", content: block(:description, "")}
     %meta{name: "keywords", content: block(:keywords, "")}
+    %link{rel: "icon", href: "/assets/img/logo.jpg", type: "image/jpeg"}
     - extend Ace::Helpers # FIXME
     = pupu :blueprint, plugins: ["fancy-type"]
     =# pupu :mootools, more: true
