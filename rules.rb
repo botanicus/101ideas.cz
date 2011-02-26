@@ -5,4 +5,4 @@ rule Static, "*.html.haml"
 rule Ace::Asset, "robots.txt", "assets/**/*"
 
 # generators
-generator TagPage#, "/tags/:slug"
+# generator TagPage#, "/tags/:slug"
