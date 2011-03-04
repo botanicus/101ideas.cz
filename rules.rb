@@ -1,7 +1,9 @@
 # encoding: utf-8
 
+require "ace/static"
+
 # filters
-rule Static, "*.html.haml"
+rule Ace::Static, "*.html.haml"
 rule Ace::Asset, "robots.txt", "assets/**/*"
 
 # generators
